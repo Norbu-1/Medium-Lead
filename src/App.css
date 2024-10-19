@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+.outside
+{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 3%;
+}
+.inside
+{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.catImg
+{
+  width: 300px;
+  height: auto;
+}
+.noImage
+{
+  margin-top: 90%;
+}
+.load{
+     position: fixed;
+     bottom: 50%;
+}
+.button
+{
+  display: flex;
+  background-color: rgb(88, 240, 88);
+  border-radius: 100px;
+  width: 200px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border: none;
+  position:fixed;
+}
+.button:hover
+{
+  background-color: rgb(5, 207, 5);
+}
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.buttonp {
+  padding: 10px 20px;
+  margin: 5px 20px;
+  width: 100px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+.p
+{
+  position: fixed;
+  left: 40%;
+  bottom: 2%;
+}
+.n{
+  position: fixed;
+  right: 40%;
+  bottom: 2%;
+}
+.buttonp:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
